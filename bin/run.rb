@@ -1,8 +1,10 @@
-#!/usr/bin/env ruby
+def welcome
+  # puts out a welcome message here!
+  puts "Welcome to the Star Wars "
+end
 
-require_relative "../lib/api_communicator.rb"
-require_relative "../lib/command_line_interface.rb"
-
-welcome
-character = get_character_from_user
-show_character_movies(character)
+def get_character_from_user
+  puts "please enter a character"
+  # use gets to capture the user's input. This method should return that input, downcased.
+  gets.chomps
+end
